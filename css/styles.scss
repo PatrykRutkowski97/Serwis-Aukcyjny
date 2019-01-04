@@ -1,0 +1,223 @@
+@import 'colors';
+
+// Screen width
+
+$mobile-screen: 320px;
+
+// mixins
+
+@mixin padding($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin margin($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin headers($top: 10%, $bottom: 10%) {
+    @include padding($top, $bottom);
+    p {
+        @include margin(3%, 10%);
+    }
+}
+
+@mixin center() {
+    text-align: center;
+}
+
+//----------- index.php --------------------
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    @include padding(5%, 5%);
+    h2 {
+        text-shadow: 1px 1px #999;
+    }
+    p {
+        @include margin(0, 6%);
+    }
+}
+
+
+#one {
+    @include headers();
+    i {
+        color: $primary-color;
+    }
+    .title {
+        @include padding(5%, 5%);
+    }
+    a[href] {
+        color: $primary-color;
+        @include center();
+        @include margin(4%, 1%);
+        text-decoration: none;
+        font-size: 20px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @media screen and (max-width: $mobile-screen) {
+        @include margin(5%, 20%);
+    }
+}
+
+
+#two {
+    @include headers();
+    img {
+        width: 10rem;
+        height: auto;
+        margin-bottom: 7%;
+        @media screen and (max-width: $mobile-screen) {
+            width: 6rem;
+        }
+    }
+    p {
+        @include center();
+    }
+}
+
+
+#three {
+    @include headers(5%,5%);
+    background-color: $primary-color;
+    color: $secondary-color;
+    h4 {
+        @include margin(2%, 4%);
+    }
+    @media screen and (max-width: $mobile-screen) {
+        @include padding(8%, 8%);
+        h1 {
+            font-size: 25px;
+        }
+        h4 {
+            font-size: 17px;
+            @include margin(0, 10%);
+        }
+    }
+}
+
+#contact {
+    @include headers();
+    h1 {
+        @include margin(0, 10%);
+    }
+    @media screen and (max-width: $mobile-screen) {
+        @include margin(10%, 5%);
+    }
+}
+
+footer {
+    background-color: $gray-light-color;
+    @include padding(5%, 5%);
+    li {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    @media screen and (max-width: $mobile-screen) {
+        @include padding(10%, 10%);
+    }
+}
+
+
+// ----------- single-add.php -------------------
+
+#single-add {
+    p {
+        @media screen and (max-width: $mobile-screen) {
+            @include margin(10%, 0);
+        }
+    }
+    .back {
+        @media screen and (max-width: $mobile-screen) {
+            @include margin(0, 10%);
+        }
+    }
+    .info-block {
+        @include padding(5%, 5%);
+        @include margin(0, 20%);
+        @media screen and (max-width: $mobile-screen) {
+            @include padding(2%, 2%);
+            @include margin(1%, 1%);
+            p {
+                @include margin(5%, 0);
+            }
+        }
+    }
+    .description {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+
+// ---------- myadds.php ------------------------
+
+#my_adds {
+    @include margin(5%, 5%);
+    h1 {
+        @include margin(0, 8%);
+    }
+    h5 {
+        color: $black;
+        text-decoration: none;
+        //text-align: center;
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .card {
+        @include margin(8%, 8%);
+        &:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+    }
+    #my-adds {
+        @include margin(5%, 5%);
+    }
+}
+
+
+// ------------ add.php ------------------------
+
+#add_ad {
+    @include padding(5%, 5%);
+   h1 {
+       @include margin(1%, 8%);
+   }
+   .required {
+       color: $red-color;
+   }
+   button[type="submit"] {
+       @include margin(5%, 0);
+   }
+}
+
+
+// ------------ panel.php -----------------------
+
+#form-search {
+    @include margin(2%, 5%);
+}
+
+
+// -------- navbar-logout.php and navbar-login.php --------------------
+
+.nav-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}

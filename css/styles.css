@@ -1,0 +1,263 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+header h2 {
+  text-shadow: 1px 1px #999;
+}
+
+header p {
+  margin-top: 0;
+  margin-bottom: 6%;
+}
+
+#one {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#one p {
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+#one i {
+  color: #007bff;
+}
+
+#one .title {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#one a[href] {
+  color: #007bff;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#one a[href]:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 320px) {
+  #one {
+    margin-top: 5%;
+    margin-bottom: 20%;
+  }
+}
+
+#two {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#two p {
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+#two img {
+  width: 10rem;
+  height: auto;
+  margin-bottom: 7%;
+}
+
+@media screen and (max-width: 320px) {
+  #two img {
+    width: 6rem;
+  }
+}
+
+#two p {
+  text-align: center;
+}
+
+#three {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+#three p {
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+#three h4 {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+@media screen and (max-width: 320px) {
+  #three {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  #three h1 {
+    font-size: 25px;
+  }
+  #three h4 {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+}
+
+#contact {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#contact p {
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+#contact h1 {
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 320px) {
+  #contact {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+footer {
+  background-color: #ccc;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+footer li {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #single-add p {
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #single-add .back {
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+}
+
+#single-add .info-block {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 0;
+  margin-bottom: 20%;
+}
+
+@media screen and (max-width: 320px) {
+  #single-add .info-block {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  #single-add .info-block p {
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+}
+
+#single-add .description {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#my_adds {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#my_adds h1 {
+  margin-top: 0;
+  margin-bottom: 8%;
+}
+
+#my_adds h5 {
+  color: #000000;
+  text-decoration: none;
+}
+
+#my_adds a:hover {
+  text-decoration: none;
+}
+
+#my_adds .card {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+#my_adds .card:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+#my_adds #my-adds {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#add_ad {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#add_ad h1 {
+  margin-top: 1%;
+  margin-bottom: 8%;
+}
+
+#add_ad .required {
+  color: #F00;
+}
+
+#add_ad button[type="submit"] {
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#form-search {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.nav-btn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+/*# sourceMappingURL=styles.css.map */
